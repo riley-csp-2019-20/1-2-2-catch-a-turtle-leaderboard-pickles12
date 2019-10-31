@@ -5,7 +5,7 @@ import turtle as trtl
 import random    
 import leaderboard as lb
 #leaderboard variables
-leaderboard_file_name = "a122_leaderboard.txt"
+leaderboard_file_name = "a112_leaderboard.txt"
 leader_names_list = []
 leader_scores_list = []
 user_name = input("What is your name?")
@@ -92,7 +92,7 @@ def manage_leaderboard():
 
   # TODO
   if (len(leader_scores_list) < 5 or score > leader_scores_list[4]):
-    lb.update_leaderboard(leaderboard_file_name, leader_names_list, leader_scores_list, player_name, score)
+    lb.update_leaderboard(leaderboard_file_name, leader_names_list, leader_scores_list, user_name, score)
     lb.draw_leaderboard(leader_names_list, leader_scores_list, True, joe, score)
 
   else:
