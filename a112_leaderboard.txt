@@ -1,3 +1,5 @@
-tai,48
-joe,70
-ajooja,8267
+chinese hacker,42
+chinese hacker,35
+mexican hacker,34
+joe,30
+lol,28

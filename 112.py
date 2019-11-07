@@ -15,10 +15,8 @@ size =  random.randint(1, 30)
 color = "purple"
 score = 0
 font_setup = ("Arial", 20, "normal")
-timer = 5
+timer = 10
 counter_interval = 1000   #1000 represents 1 second
-
-
 timer_up = False
 shapelist = ["square", "triangle", "classic", "turtle", "circle"]
 #-----initialize turtle-----
@@ -66,7 +64,8 @@ def countdown():
     joe.ht()
     joe.goto(1000,100)
     timer_up = True
-    manage_leaderboard()    
+    manage_leaderboard()   
+    joe.goto(1000,100) 
   else:
     counter.write("Timer: " + str(timer), font=font_setup)
     timer -= 1
